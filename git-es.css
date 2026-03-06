@@ -1,0 +1,14 @@
+:root{
+    --yel: rgb(209, 173, 14);
+    --ar: rgb(211, 141, 10);
+    --blk: rgb(17, 15, 12);
+}
+
+body{
+    background-color: var(--blk);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+    background: linear-gradient( var(--ar), var(--yel) );
+}
