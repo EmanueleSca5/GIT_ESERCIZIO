@@ -1,14 +1,69 @@
 :root{
     --yel: rgb(209, 173, 14);
     --ar: rgb(211, 141, 10);
-    --blk: rgb(17, 15, 12);
+    --blk: rgba(0, 0, 0, 0.973);
 }
 
 body{
     background-color: var(--blk);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
 }
 
 .navbar{
     background: linear-gradient( var(--ar), var(--yel) );
+}
+
+.header{background-color: transparent;}
+
+.pbg{
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(to right, var(--ar), var(--yel));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+.pbg-1{
+    animation: dx linear infinite 12s;
+    position: relative;
+}
+
+.pbg-2{
+    animation: sx linear infinite 10s ;
+    position: relative;
+    right: 0%;
+}
+
+.pbg-3{
+    animation: dx linear infinite 11s;
+    position: relative;
+}
+
+.pbg-4{
+    animation: sx linear infinite 14s;
+    position: relative;
+    right: 0%;
+}
+
+.titolo{
+    color: rgb(143, 109, 0);
+    filter: drop-shadow(6px 6px 3px rgb(255, 255, 255));
+   
+    font-weight: bolder;
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+
+@keyframes dx { 0%{left: -30%;}
+100%{left: 110%;}
+    
+}
+@keyframes sx { 0%{right: -10%;}
+100%{right: 110%;}
+    
 }
