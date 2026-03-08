@@ -5,26 +5,43 @@
 }
 
 body{
-    background-color: rgb(182, 178, 178);
+    background-image: url(./media/sfondo-giornale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
-.navbar{
-    background: linear-gradient( var(--ar), var(--yel) );
+body::before{
+     background-image: url(./media/sfondo-giornale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+.navbar{
+    background: var(--blk);
+    position: sticky; top: 0%; z-index: 1000;
+}
+
+aside{
+    
+}
+
+
+
 .container-titolo{
-    background: linear-gradient(var(--blk), rgb(5, 5, 5),rgb(59, 59, 59), rgb(182, 178, 178));
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.041) 95%);
     padding-bottom: 220px;
 }
 .header{background-color: transparent; overflow: hidden;}
 
 .pbg{
-    letter-spacing: 5px;
+    letter-spacing: 20px;
     font-weight: 700;
-    font-size: 40px;
-    background: linear-gradient(to right, var(--ar), var(--yel));
+    font-size: 55px;
+    background: var(--blk);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -34,35 +51,37 @@ body{
 
 
 .pbg-1{
-    animation: dx linear infinite 12s;
+    animation: dx linear infinite 5s;
     position: relative;
 }
 
 .pbg-2{
-    animation: sx linear infinite 10s ;
+    animation: sx linear infinite 5s ;
     position: relative;
     right: 0%;
 }
 
 .pbg-3{
-    animation: dx linear infinite 11s;
+    animation: dx linear infinite 4s;
     position: relative;
 }
 
 .pbg-4{
-    animation: sx linear infinite 14s;
+    animation: sx linear infinite 5s;
     position: relative;
     right: 0%;
 }
 
 .titolo{
-    color: var(--ar);
-    filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.767));
+    color: var(--blk);
+    filter: drop-shadow(5px 5px 1px var(--ar));
    
     font-weight: bolder;
     font-size: 80px;
     letter-spacing: 5px;
 }
+
+
 
 .sott-tit{
     color: rgb(0, 0, 0);
@@ -74,15 +93,15 @@ body{
 }
 
 .notizie{
-    background: linear-gradient( var(--ar), var(--yel) ) ;
+    background-color: white ;
     border-radius: 20px;
 }
 
-@keyframes dx { 0%{left: -30%;}
+@keyframes dx { 0%{left: -50%;}
 100%{left: 110%;}
     
 }
-@keyframes sx { 0%{right: -10%;}
+@keyframes sx { 0%{right: -50%;}
 100%{right: 110%;}
     
 }
