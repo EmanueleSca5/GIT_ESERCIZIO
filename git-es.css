@@ -25,8 +25,14 @@ body::before{
     position: sticky; top: 0%; z-index: 1000;
 }
 
-aside{
-    
+.sidebar{
+    position: sticky;
+    top: 30px;
+    background: linear-gradient(rgba(255, 255, 255, 0.137), var(--blk) 7%);
+}
+
+.side-items{
+    text-decoration: underline 1px var(--ar);
 }
 
 
@@ -41,10 +47,7 @@ aside{
     letter-spacing: 20px;
     font-weight: 700;
     font-size: 55px;
-    background: var(--blk);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+   color: var(--blk);
 }
 
 
@@ -70,6 +73,7 @@ aside{
     animation: sx linear infinite 5s;
     position: relative;
     right: 0%;
+    width: 100vw;
 }
 
 .titolo{
